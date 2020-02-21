@@ -164,6 +164,9 @@ msgstr ""
 msgid "remark"
 msgstr ""
 
+msgid "remarkid"
+msgstr ""
+
 #: templates/v2ray/accounts.html:74 templates/v2ray/accounts.html:161
 #: templates/v2ray/accounts.html:172 templates/v2ray/accounts.html:189
 msgid "none"

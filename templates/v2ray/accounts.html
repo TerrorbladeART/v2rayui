@@ -70,14 +70,12 @@
                                         <a-tag color="green">[[ inbound.protocol ]]</a-tag>
                                     </a-col>
                                     <a-col :xs="24" :sm="24" :lg="12">
-                                        <!-- 备注 -->
                                         {{ _('remark') }}：
                                         <a-tag color="blue">[[ empDefault(inbound.remark, '{{ _('none') }}') ]]</a-tag>
                                     </a-col>
                                     <a-col :xs="24" :sm="24" :lg="12">
-                                        <!-- 备注 -->
                                         {{ _('remarkid') }}：
-                                        <a-tag color="blue">[[ sizeFormat(inbound.remarkid, '{{ _('none') }}') ]]</a-tag>
+                                        <a-tag color="blue">[[ empDefault(inbound.remarkid, '{{ _('none') }}') ]]</a-tag>
                                         <a-tag color="red">[[ inbound.remarkid ]]</a-tag>
                                     </a-col>
                                     <a-col :xs="24" :sm="24" :lg="12">
@@ -99,9 +97,6 @@
                                                       @confirm="resetTraffic(inbound)"
                                                       ok-text="{{ _('confirm') }}" cancel-text="{{ _('cancel') }}">
                                             <a-tag color="green">[[ sizeFormat(inbound.up + inbound.down) ]]</a-tag>
-                                            <a-tag color="blue">[[ inbound.up ]]</a-tag>
-                                            <a-tag color="red">[[ inbound.down ]]</a-tag>
-                                            
                                         </a-popconfirm>
                                     </a-col>
                                     <a-col :xs="24" :sm="24" :lg="12">
@@ -365,6 +360,7 @@
                             inbound.sniffing.toString(false) : '{}',
                         remark: inbound.remark,
                         remarkid: inbound.remarkid,
+
                     };
                     this.submit('/v2ray/inbound/add', data, inModal, callback, callback);
                 },

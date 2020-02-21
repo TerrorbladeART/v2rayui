@@ -164,8 +164,8 @@ msgstr "协议"
 msgid "remark"
 msgstr "备注"
 
-msgid "remarkid"
-msgstr "限制流量"
+msgid "remark"
+msgstr "流量限制"
 
 #: templates/v2ray/accounts.html:74 templates/v2ray/accounts.html:161
 #: templates/v2ray/accounts.html:172 templates/v2ray/accounts.html:189

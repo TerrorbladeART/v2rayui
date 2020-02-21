@@ -560,7 +560,7 @@ class Inbound extends V2CommonClass {
         this.tag = '';
         this.sniffing = new Sniffing();
         this.remark = '';
-        this.remarkid = '';
+        this.remarkid = remarkid'';
         this.enable = true;
     }
 
@@ -605,7 +605,7 @@ class Inbound extends V2CommonClass {
         let obj = {
             v: '2',
             ps: this.remark,
-            remarkps: this.remarkid,
+            remarkps: this.remarkps,
             add: address,
             port: this.port,
             id: this.settings.vmesses[0].id,
